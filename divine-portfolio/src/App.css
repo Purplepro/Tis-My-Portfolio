@@ -3,6 +3,7 @@
 
  * {
    font-family: 'Open Sans', Helvetica;
+   box-sizing: border-box;
  }
 
 .App {
@@ -14,25 +15,102 @@
 
 .nav {
   width: 100%;
+  height: 70px;
   padding-top: 10px; 
+  background-color: aliceblue;
+  position: relative;
 }
 
 .nav ul {
   list-style: none !important;
   text-align: right;
+  padding-bottom: 0px;
 }
 
 .nav ul li {
   display: inline;
   font-size: 20px;
+  margin: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
+
+/* .footer {
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: aliceblue;
+
+} */
+
+/* mobile navbar */
+.nav .mobile-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+
+  .nav .Navigation {
+    display: none;
+  }
+
+  .nav .mobile-navbar{
+    display: flex;
+    align-items: right;
+    color: black;
+  }
+
+  .nav .mobile-navbar .Hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    color: black;
+  }
+
+
+  .nav nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 100%;
+    background-color: #181818;
+    border-top: 2px solid white;
+
+  }
+
+  .nav {
+    opacity: 1;
+  }
+  
+  .nav a {
+    color: white;
+  }
+
+  .nav a:hover {
+    border-bottom: none;
+    color: rgb(124, 74, 47);
+  }
+
+
+
+  
+}
+/* end of mobile navebar */
 
 .snap {
   scroll-snap-align:start;
-  
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
-
+/* section 1  */
 .Section_1 {
   height: 100vh;
   background-color: aliceblue;
@@ -40,19 +118,27 @@
   grid-template-rows: 50% 50%;
 }
 
+.section1-header {
+  font-size: 40px;
+}
+
+/* end of section 1 */
+
 /* project section */
 .Section_2 {
 height: 150vh;
-background-color: rgb(19, 18, 18);
+background-color: black;
 display: grid;
 grid-template-columns: auto auto auto !important;
+grid-auto-rows: 25%;
 grid-gap: 10px !important;
 padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 750px) {
   .Section_2 {
-  height: 150vh;
+  height: 200vh;
   background-color: rgb(19, 18, 18);
   display: grid;
   grid-template-columns: auto !important;
@@ -82,8 +168,6 @@ padding: 10px;
 
 .portfoli-weblinks {
   /* padding-top: 300px; */
-  display: grid;
-  grid-template-columns: auto auto auto !important;
   grid-gap: 10px !important;
   padding: 10px;
 }
@@ -92,56 +176,71 @@ padding: 10px;
   background-image: url('./images/birdflowpic.png');
   /* height: 300px;
   width: 450px; */
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .bluedale-picture {
   background-image: url('./images/bluedalepic.png');
   /* height: 300px;
   width: 450px; */
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .elomobile-picture {
   background-image: url('./images/elopic.png');
   /* height: 300px;
   width: 450px; */
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.orbitalgrounds-picture {
+  background-image: url('./images/orbitalgroundspic.png');
+  /* height: 300px;
+  width: 450px; */
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: rgb(146, 231, 242);
+  width: 100%;
+  bottom: 0;
+  height: 0;
   overflow: hidden;
-  width: 0;
-  height: 100%;
   transition: .8s ease;
-  background-size: contain;
+  background-size: auto 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   position: relative;
-  height: 50%;
+  width: 100%;
 }
 
 .container:hover .overlay {
-  width: 100%;
+  height:100%;
 }
 
 .project-button {
   width: 100px;
   height: 40px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
   border: none;
   border-radius: 2px;
+  background-color: aliceblue;
 }
 
 .project-link {
   position: absolute;
+  color: black;
 }
 
 
@@ -151,40 +250,76 @@ padding: 10px;
 
 /* skills section / technologies */
 .Section_3 {
-height: 100vh;
-background-color: aliceblue;
+height: 110vh;
+background-color: black;
 }
+
+.language-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-left: 150px;
+}
+
+.circle {
+  background-color: aliceblue;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 10px ;
+  display: flex;
+  align-content: center;
+}
+
+.circle:hover {
+  transform: scale(1.5);
+  transition: .4s ease-in-out;
+}
+
+.skills-header {
+  text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+}
+
+/* .logo {
+box-shadow: 0px 5px;
+
+} */
+
 /* end of skills section / technologies */
 
-
 .nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
   text-decoration: none !important;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid rgb(124, 74, 47);
   transition: border 300ms !important;
   -webkit-transition: border 400ms linear;
   -moz-transition: border 400ms linear;
   -ms-transition: border 400ms linear;
   -o-transition: border 400ms linear;
-  color: black;
 }
 
-.nav-link:hover {
-  border-bottom: 1px solid rgb(124, 74, 47) !important;
-}
 
-.link-bunch {
+
+/* .link-bunch {
   margin-top: 20px;
-}
+} */
 
 
 
 /* about page */
 
 .Asection_1 {
-  height: 100vh;
+  height: 150vh;
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 50% 50%;
+  padding: 100px;
 }
 
 
@@ -193,25 +328,39 @@ background-color: aliceblue;
   background-color: black;
   display: grid;
   grid-template-columns: 50% 50%;
+  padding: 100px;
 }
 
 .OutsidePic {
     height: 550px;
     width: 400px;
-    border-radius: 50%;
+    /* border-radius: 50; */
 }
 
 .GymPic {
     height: 600px;
     width: 350px;
-    border-radius: 50%;
-}
+    margin-left: 200px;
+    /* border-radius: 50%;*/
+} 
 
 .Asect-2-paragraph {
   color: white;
+  font-size: 25px;
+}
+
+.Asect-1-paragraph {
+  font-size: 20px;
+
+}
+
+.sect1-p {
+  overflow-y: scroll;
 }
 
 
 
 
 /* end of about page */
+
+

@@ -10,8 +10,9 @@ const aboutSection1 = () => {
             <div>
             <img src={ OutsidePic } className="OutsidePic" alt="Sebastian outside in nature"/>
             </div>
-            <div>
-            <p>My name is Sebastian Gayle. 
+            <div className="sect1-p">
+            <p className="Asect-1-paragraph"> 
+                <span><h1> I'm Sebastian Gayle</h1></span>
                 I am a software engineer and Designer. I love taking things from an idea and developing a working solution from that idea so in other words I like to make websites functional.
                  While I believe that making websites functional is an important and big part of my job as a software engineer, Im creative at heart and creativity is something that I love to do. 
                  Whether its making My websites responive with animations or searching for color schemes to really grasp the users attention. When I think of frontend I think of the user and what will keep their eyes gravitated toward the screen because they see is beauty in a website. 

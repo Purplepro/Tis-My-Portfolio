@@ -3,6 +3,7 @@ import GymPic from '../../images/GoldGymPic.jpeg';
 
 const aboutSection2 = () => {
 
+   
 
     return (
         <div className="Asection_2 snap">
