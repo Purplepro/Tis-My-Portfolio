@@ -9,6 +9,7 @@ class Section2 extends Component {
             <div className="Section_2 snap" id="sect_2">
                
 
+
                     <div className="birflow-picture container">
                         <div className="overlay">
                             <a className="project-link" href="https://bird-flow.herokuapp.com/"><button className="project-button">BirdFlow</button></a>
@@ -40,7 +41,11 @@ class Section2 extends Component {
                         </div>
                     </div>   
               
-                
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div id="title"></div>  
+
             </div>
         )
     }

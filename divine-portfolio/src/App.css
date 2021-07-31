@@ -24,16 +24,33 @@
 .nav ul {
   list-style: none !important;
   text-align: right;
-  padding-bottom: 0px;
+ 
 }
 
 .nav ul li {
   display: inline;
   font-size: 20px;
-  margin: 0;
+}
+
+
+
+
+.nav-link {
+  background: linear-gradient(currentColor 0 0)  
+  0 100% /var(--d, 0) 3px 
+  no-repeat;
+  transition:0.5s;
+  text-decoration: none;
+  color: black;
   margin-right: 0;
+  margin-left: 0;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 1px;
+}
+
+.nav-link:hover {
+  --d:100%;
 }
 
 
@@ -119,7 +136,12 @@
 }
 
 .section1-header {
-  font-size: 40px;
+  font-size: 60px;
+  font-family: 'Helvetica', serif;
+  font-weight: bold;
+}
+span {
+  display: block;
 }
 
 /* end of section 1 */
@@ -195,8 +217,8 @@ padding: 10px;
 }
 .orbitalgrounds-picture {
   background-image: url('./images/orbitalgroundspic.png');
-  /* height: 300px;
-  width: 450px; */
+  /* height: 400px;
+  width: 100%;  */
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -217,6 +239,7 @@ padding: 10px;
 .container {
   position: relative;
   width: 100%;
+  z-index: 200;
 }
 
 .container:hover .overlay {
@@ -250,8 +273,9 @@ padding: 10px;
 
 /* skills section / technologies */
 .Section_3 {
-height: 110vh;
-background-color: black;
+height: 150vh;
+background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
+overflow: hidden;
 }
 
 .language-container {
@@ -282,6 +306,9 @@ background-color: black;
   color: aliceblue;
 }
 
+.skill-names {
+  color: white;
+}
 /* .logo {
 box-shadow: 0px 5px;
 
@@ -289,20 +316,7 @@ box-shadow: 0px 5px;
 
 /* end of skills section / technologies */
 
-.nav-link {
-  text-decoration: none;
-  color: black;
-}
 
-.nav-link:hover {
-  text-decoration: none !important;
-  border-bottom: 2px solid rgb(124, 74, 47);
-  transition: border 300ms !important;
-  -webkit-transition: border 400ms linear;
-  -moz-transition: border 400ms linear;
-  -ms-transition: border 400ms linear;
-  -o-transition: border 400ms linear;
-}
 
 
 
@@ -315,19 +329,20 @@ box-shadow: 0px 5px;
 /* about page */
 
 .Asection_1 {
-  height: 150vh;
+  height: 100vh;
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 100px;
+  padding-left: 400px;
 }
 
 
 .Asection_2 {
-  height: 100vh;
+  height: 150vh;
   background-color: black;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50%;
   padding: 100px;
 }
 
@@ -344,9 +359,11 @@ box-shadow: 0px 5px;
     /* border-radius: 50%;*/
 } 
 
-.Asect-2-paragraph {
-  color: white;
-  font-size: 25px;
+
+.aboutMe {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .Asect-1-paragraph {
