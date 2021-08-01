@@ -16,6 +16,7 @@ import bootstrap from '../../images/bootstrap.png';
 import heroku from '../../images/heroku.png';
 import illustrator from '../../images/illustrator.png';
 import photoshop from '../../images/photoshop.png';
+import Footer from '../Footer/Footer';
 
 
 
