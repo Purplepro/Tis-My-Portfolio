@@ -47,24 +47,43 @@ class Section3 extends Component {
                 <h1 className="skills-header">Skills</h1>
                 <div className="language-container">
                 
-                <div>   <div className="circle"><img className="logo" src={ react } alt="react programming language logo"/> </div> <h2 className="skill-names">ReactJs</h2></div> 
-                <div>   <div className="circle"><img className="logo" src={ nodejs } alt="nodejs logo"/></div> <h2 className="skill-names">NodeJs</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ javascript } alt="javascript logo"/></div> <h2 className="skill-names">Javascript</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ html } alt="html logo"/></div> <h2 className="skill-names">Html</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ css } alt="css logo"/></div> <h2 className="skill-names">CSS</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ python } alt="python"/></div> <h2 className="skill-names">Python</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ django } alt="django"/></div> <h2 className="skill-names">Django</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ postgres } alt="postgres"/></div> <h2 className="skill-names">PostgresQL</h2></div> 
-                <div>   <div className="circle"><img className="logo" src={ mongodb  } alt="mongodb"/></div> <h2 className="skill-names">MongoDB</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ restapi } alt="restapi logo"/></div> <h2 className="skill-names">Rest API</h2></div> 
-                <div>   <div className="circle"><img className="logo" src={ github } alt="github logo"/></div> <h2 className="skill-names">Github</h2></div> 
-                <div>   <div className="circle"><img className="logo" src={ git } alt="git logo"/></div> <h2 className="skill-names">Git</h2></div>
-                <div>   <div className="circle"><img className="logo" src={ bootstrap } alt="bootstrap"/></div> <h2 className="skill-names">Bootstrap</h2></div> 
-                <div>   <div className="circle"><img className="logo" src={ heroku } alt="heroku logo"/></div> <h2 className="skill-names">Heroku</h2></div> 
-                <div>   <div className="circle"><img className="logo" src={ illustrator } alt="adobe illustrator logo"/></div> <h2 className="skill-names">Adobe Illustrator</h2></div> 
-                <div>   <div className="circle"><img className="logo" src={ photoshop } alt="adobe photoshop logo"/></div> <h2 className="skill-names">Adobe Photoshop</h2></div>
+                <div>   <div className="circle"><img className="logo" src={ react } alt="react programming language logo"/> </div></div> 
+                <div>   <div className="circle"><img className="logo" src={ nodejs } alt="nodejs logo"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ javascript } alt="javascript logo"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ html } alt="html logo"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ css } alt="css logo"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ python } alt="python"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ django } alt="django"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ postgres } alt="postgres"/></div></div> 
+                <div>   <div className="circle"><img className="logo" src={ mongodb  } alt="mongodb"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ restapi } alt="restapi logo"/></div></div> 
+                <div>   <div className="circle"><img className="logo" src={ github } alt="github logo"/></div></div> 
+                <div>   <div className="circle"><img className="logo" src={ git } alt="git logo"/></div></div>
+                <div>   <div className="circle"><img className="logo" src={ bootstrap } alt="bootstrap"/></div></div> 
+                <div>   <div className="circle"><img className="logo" src={ heroku } alt="heroku logo"/></div></div> 
+                <div>   <div className="circle"><img className="logo" src={ illustrator } alt="adobe illustrator logo"/></div></div> 
+                <div>   <div className="circle"><img className="logo" src={ photoshop } alt="adobe photoshop logo"/></div></div>
             
                 </div>
+
+                <ul className="list-of-technologies">
+                    <li>React Javascript</li>
+                    <li>Node Javascript</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>RESTful API</li>
+                    <li>GitHub</li>
+                    <li>Git</li>
+                    <li>Bootstrap</li>
+                    <li>Heroku</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                </ul>
             </div>
         )
     }

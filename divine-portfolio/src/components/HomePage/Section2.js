@@ -13,23 +13,20 @@ class Section2 extends Component {
                     <div className="birflow-picture container">
                         <div className="overlay">
                             <div>
-                            <a className="project-link" href="https://bird-flow.herokuapp.com/"><button className="project-button">BirdFlow</button></a>
-                            </div>
-                            <div>
-                            <p>Check out birdflow, a site for bird lovers who likes to create a bird journal. Add any bird you've seen in your area</p>
+                            <a className="project-link" href="https://bird-flow.herokuapp.com/"> <p className="project-description">A birdjournal for bird lovers built with ReactJS, NodeJS, MongoDb, and REST</p></a>
                             </div>
                         </div>
                     </div>
                     
                     
                     <div className="bluedale-picture container">
-                        <div className="overlay">
-                            <div>
-                           <a className="project-link" href="https://bluedale.herokuapp.com/"> <button className="project-button">BlueDale</button></a>
-                           </div>
+                        <div className="overlay">                    
                            <div>
-                           <p>If your looking for an up and coming crypto or stock exchange website to research your investment of interest. Look no further because BlueDale is here.</p>
+                           <a className="project-link" href="https://bluedale.herokuapp.com/">
+                           <p className="project-description">A crypto currency research app built with NodeJS, EJS, Postgres SQL, Sequelize, and REST.</p>
+                           </a>
                            </div>
+                           
                         </div>
                     </div>
 
@@ -37,10 +34,7 @@ class Section2 extends Component {
                     <div className="elomobile-picture container">
                         <div className="overlay">
                             <div>
-                            <a className="project-link" href="https://elomobile-frontend.herokuapp.com/"><button className="project-button">EloMobile</button></a>
-                            </div>
-                            <div>
-                            <p>Feast your experience with EloMobile. An attention grabbing UI and hopefully a soon needed app, EloMobile is an up and coming app for ev owners. </p>
+                            <a className="project-link" href="https://elomobile-frontend.herokuapp.com/"> <p className="project-description">A Innovative app keeping clean energy in mind. This app was built with ReactJS, NodeJS, MongoDB, ChartJS, and REST</p></a>
                             </div>
                         </div>
                     </div>
@@ -49,8 +43,8 @@ class Section2 extends Component {
             
                     <div className="orbitalgrounds-picture container">
                         <div className="overlay">
-                            <div>
-                         <a className="project-link" href="https://github.com/Purplepro/OrbitalGrounds"><button className="project-button">OrbitalGrounds</button></a>
+                            <div className="project-b-div">
+                            <a className="project-link" href="https://github.com/Purplepro/OrbitalGrounds"><p className="project-description">OrbitalGrounds is a space game that was built using Vanilla Javascript, CSS, Html, and Html canvas.</p></a>
                          </div>
                         </div>
                     </div>   

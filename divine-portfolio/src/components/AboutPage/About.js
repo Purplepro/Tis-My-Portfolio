@@ -9,6 +9,7 @@ const About = () => {
     return (
         <div className="App">
             <Asection1/>
+            <Asection2/>
         </div>
     )
 }

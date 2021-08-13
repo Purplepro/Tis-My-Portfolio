@@ -1,27 +1,37 @@
 import React from 'react';
 import OutsidePic from '../../images/OutsidePic.jpeg';
-
+import Navbar from '../Navbar/Navbar';
 
 const aboutSection1 = () => {
 
 
     return (
         <div className="Asection_1 snap">
+            <Navbar/>
+            <div className="Asection1-grid">
             <div>
             <img src={ OutsidePic } className="OutsidePic" alt="Sebastian outside in nature"/>
             </div>
             <div className="sect1-p">
+                <div>
                 <h1 className="aboutMe">ABOUT <span>ME.</span></h1>
-            <p className="Asect-1-paragraph"> 
-               <span><h2>I am a software engineer</h2></span>
-                and designer. I have an eye for creativity putting it at the forefront of every project I develop.
-            </p>
+                </div>
+                <div class="downArrow bounce">
+                <img width="80" height="80" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+                </div>
+            </div>
             </div>
         </div>
     )
 }
 
 
+
+
+// <p className="Asect-1-paragraph"> 
+//<span><h2>I am a software engineer</h2></span>
+ //and designer. I have an eye for creativity putting it at the forefront of every project I develop.
+//</p> 
 // I am a software engineer and Designer. I love taking things from an idea and developing a working solution from that idea so in other words I like to make websites functional.
 //                  While I believe that making websites functional is an important and big part of my job as a software engineer, Im creative at heart and creativity is something that I love to do. 
 //                  Whether its making My websites responive with animations or searching for color schemes to really grasp the users attention. When I think of frontend I think of the user and what will keep their eyes gravitated toward the screen because they see is beauty in a website. 

@@ -7,6 +7,7 @@ import ResumePage from './components/ResumePage';
 import Home from './components/HomePage/Home';
 import About from './components/AboutPage/About';
 import Footer from './components/Footer/Footer';
+import Contact from './components/Contact'
 import {TweenMax, Power3} from 'gsap';
 
 
@@ -20,9 +21,9 @@ function App() {
     <div>
   
       <BrowserRouter>
-      <Navbar/>
      
       <Switch>
+      <Route path='/contact' component={Contact}/>
       <Route path='/resumepage' component={ ResumePage }/>
       <Route path='/about' component={ About }/>
       <Route exact path='/' component={ Home }/>
