@@ -525,6 +525,7 @@ box-shadow: 0px 5px;
 .Asection_2 {
   height: 100vh;
   background-color: black;
+  padding-top: 100px;
 }
 
 .Asect-2-paragraph {
@@ -560,7 +561,12 @@ box-shadow: 0px 5px;
 .Asect-1-paragraph {
   font-size: 20px;
 
+}
 
+.Asect-2-paragraph {
+  color: white;
+  font-size: 20px;
+  padding: 30px;
 }
 
 .sect1-p {
@@ -631,6 +637,14 @@ box-shadow: 0px 5px;
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
+}
+
+#aboutme-bio {
+  height: 600px;
+  width: 80%;
+  border-left: 3px solid rgb(247, 242, 178);
+  border-right: 3px solid rgb(247, 242, 178);
+  margin: auto;
 }
 
 
