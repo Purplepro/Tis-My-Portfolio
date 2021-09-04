@@ -25,10 +25,8 @@ function App() {
       <Switch>
       <Route path='/contact' component={Contact}/>
       <Route path='/resumepage' component={ ResumePage }/>
-      <Route path='/about' component={ About }/>
       <Route exact path='/' component={ Home }/>
       </Switch>
-      <Footer/>
      
       </BrowserRouter>
     </div>

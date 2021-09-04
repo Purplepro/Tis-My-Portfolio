@@ -2,10 +2,13 @@ import React, {useRef} from 'react'
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
+import ASection1 from '../AboutPage/Asection1';
 import Navbar from '../Navbar/Navbar';
 import {gsap} from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import {useIntersection} from 'react-use';
+import Footer from '../Footer/Footer';
+import aboutSection2 from '../AboutPage/Asection2';
 
 
 
@@ -66,6 +69,7 @@ const Home = () => {
     return (
         <div className="App">
         <Section1 ref={sectionRef} className="panel"/>
+        <ASection1 ref={sectionRef}/>
         <Section2 ref={sectionRef} className="panel"/>
         <Section3 ref={sectionRef} className="panel"/>
         </div>

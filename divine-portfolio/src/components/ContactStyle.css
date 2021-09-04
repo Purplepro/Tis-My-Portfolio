@@ -7,11 +7,14 @@
 }
 
 #contact-link {
-    background-color: black;
+    background-color: rgb(124, 74, 47);
     border-radius: 3px;
     padding-top: 0;
     padding: 10px;
+    transition: all 0.2s ease;
+    color: rgb(247, 242, 178);
 }
+
  
 
 
