@@ -44,7 +44,7 @@ class Section3 extends Component {
                     <div id="title"></div>
 
 
-                <h1 className="skills-header">Skills</h1>
+                <h1 className="skills-header">Skills.</h1>
                 <div className="language-container">
                 
                 <div>   <div className="circle"><img className="logo" src={ react } alt="react programming language logo"/> </div></div> 

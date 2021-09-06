@@ -1,53 +1,57 @@
 
-import React,{ useState } from 'react'
+import React from 'react'
 import '../components/ContactStyle.css'
 import Artvid from '../videos/artvid.mp4';
 import Navbar from './Navbar/Navbar';
+import emailjs from 'emailjs-com';
 
 
-const Contact = (props) => {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
- 
+const Contact = () => {
 
-    const onNameChange = (e) => {
-        setName(e.target.value)
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_cvjdv9i', 'contactme_ne6b3hn', e.target, 'user_RQw2FMGaPCKoBFVMccgRS')  
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
     }
 
-    const onEmailChange = (e) => {
-        setEmail(e.target.value)
-    }
 
-    const onMessageChange = (e) => {
-        setMessage(e.target.value)
-    }
-
-    const handleSubmit = (e) => {
-        
-    }
 
 
     return (
         <div className="Contact">
             <Navbar/>
-            <h1 className="contact-header">Contact Me</h1>
+            <h1 className="contact-header">Contact Me.</h1>
             <div className="form-container">
                 <div className="grid-div-1">
                     
-            <form className="contact-form" onSubmit={handleSubmit} method="POST">
+            <form className="contact-form" onSubmit={sendEmail}>
+
     <div className="form-group">
-        <input type="text" className="form-control" value={name} onChange={onNameChange} placeholder="Name"/>
+        <input type="text" className="form-control"  placeholder="Name" name="name"/>
     </div>
+
+    <div className="form-group">
+        <input type="text" className="form-control"  placeholder="Subject" name="subject"/>
+    </div>
+
     <div className="form-group">
         
-        <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={onEmailChange} placeholder="Email address"/>
+        <input type="email" className="form-control" placeholder="Your Email address" name="email"/>
     </div>
+
     <div className="form-group">
-        <textarea className="form-control" id="textarea"rows="5" value={message}onChange={handleSubmit} placeholder="Message me"/>
+        <textarea type="text" className="form-control" id="textarea" cols="30" rows="5"  placeholder="Message me" name="message"/>
     </div>
-    <button type="submit" className="contact-button" >Submit</button>
+
+    <input type="submit" className="contact-button" value="Send"/>
+
 </form>
                 </div>
                 <div className="grid-div-2">
