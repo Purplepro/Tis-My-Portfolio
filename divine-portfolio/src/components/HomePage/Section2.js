@@ -1,24 +1,24 @@
-import React, {useEffect} from 'react';
-import Aos from 'aos';
-
-
+import React from 'react';
+import { motion } from 'framer-motion'
 
 const Section2 = () => {
-
-    useEffect(() => {
-        Aos.init({duration: 2000});
-    }, [])
 
 
 
 
    
         return (
-            <div className="Section_2 snap" id="sect_2">
+            <motion.div className="Section_2 snap" id="sect_2">
                
 
 
-                    <div data-aos="fade-right" className="birflow-picture container">
+                    <div 
+                    data-aos="fade-right" 
+                    className="birflow-picture container"
+                    exit={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    initial={{opacity: 0}}
+                    >
                         <div className="overlay">
                             <div>
                             <a className="project-link" href="https://bird-flow.herokuapp.com/"> <p className="project-description">A birdjournal for bird lovers built with ReactJS, NodeJS, MongoDb, and REST</p></a>
@@ -59,7 +59,7 @@ const Section2 = () => {
               
                      
 
-            </div>
+            </motion.div>
         )
     
 }

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useEffect} from 'react'
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
@@ -9,12 +9,16 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 import {useIntersection} from 'react-use';
 import Footer from '../Footer/Footer';
 import aboutSection2 from '../AboutPage/Asection2';
+import Aos from 'aos';
+import 'aos/dist/aos';
 
 
 
 const Home = () => {
 
-    const sectionRef = useRef(null);
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
 
     // const intersection = useIntersection(sectionRef, {
     //     root: null,
@@ -68,10 +72,10 @@ const Home = () => {
 
     return (
         <div className="App">
-        <Section1 ref={sectionRef} className="panel"/>
-        <ASection1 ref={sectionRef}/>
-        <Section2 ref={sectionRef} className="panel"/>
-        <Section3 ref={sectionRef} className="panel"/>
+        <Section1  className="panel"/>
+        <ASection1 />
+        <Section2 className="panel"/>
+        <Section3 className="panel"/>
         </div>
     )
 }

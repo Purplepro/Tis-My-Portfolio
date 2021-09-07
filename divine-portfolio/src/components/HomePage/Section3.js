@@ -17,7 +17,7 @@ import heroku from '../../images/heroku.png';
 import illustrator from '../../images/illustrator.png';
 import photoshop from '../../images/photoshop.png';
 import Footer from '../Footer/Footer.js';
-
+import { motion } from 'framer-motion'
 
 
 
@@ -37,7 +37,13 @@ import Footer from '../Footer/Footer.js';
 class Section3 extends Component {
     render() {
         return (
-            <div className="Section_3 snap" id="sect_3">
+            <motion.div 
+            className="Section_3 snap" 
+            id="sect_3"
+            exit={{opacity: 0}}
+            animate={{opacity: 1}}
+            initial={{opacity: 0}}
+            >
                     <div id="stars"></div>
                     <div id="stars2"></div>
                     <div id="stars3"></div>
@@ -84,7 +90,7 @@ class Section3 extends Component {
                     <li>Adobe Illustrator</li>
                     <li>Adobe Photoshop</li>
                 </ul>
-            </div>
+            </motion.div>
         )
     }
 }

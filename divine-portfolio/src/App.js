@@ -7,7 +7,7 @@ import ResumePage from './components/ResumePage';
 import Home from './components/HomePage/Home';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact'
-import {TweenMax, Power3} from 'gsap';
+import { AnimatePresence } from 'framer-motion'
 
 
 
@@ -18,16 +18,17 @@ import {TweenMax, Power3} from 'gsap';
 function App() {
   return (
     <div>
-  
+      
       <BrowserRouter>
-     
+      <AnimatePresence>
       <Switch>
       <Route path='/contact' component={Contact}/>
       <Route path='/resumepage' component={ ResumePage }/>
       <Route exact path='/' component={ Home }/>
       </Switch>
-     
+      </AnimatePresence>
       </BrowserRouter>
+      
     </div>
   );
 }

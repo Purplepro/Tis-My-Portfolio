@@ -1,5 +1,5 @@
 import NavLinks from './NavLinks';
-
+import sevsLogo from '../../images/SevSlogo.png';
 const Navigation = () => {
 
 

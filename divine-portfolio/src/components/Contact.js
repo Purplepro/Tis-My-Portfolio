@@ -4,6 +4,7 @@ import '../components/ContactStyle.css'
 import Artvid from '../videos/artvid.mp4';
 import Navbar from './Navbar/Navbar';
 import emailjs from 'emailjs-com';
+import { motion } from 'framer-motion'
 
 
 
@@ -25,7 +26,12 @@ const Contact = () => {
 
 
     return (
-        <div className="Contact">
+        <motion.div 
+        className="Contact"
+        exit={{opacity: 0}}
+        animate={{opacity: 1}}
+        initial={{opacity: 0}}
+         >
             <Navbar/>
             <h1 className="contact-header">Contact Me.</h1>
             <div className="form-container">
@@ -67,7 +73,7 @@ const Contact = () => {
                     </video>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -1,20 +1,29 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import OutsidePic from '../../images/OutsidePic.jpeg';
+import { motion } from 'framer-motion'
+import Aos from 'aos';
+import 'aos/dist/aos';
 
 const aboutSection1 = () => {
 
 
+
     return (
-        <div className="Asection_1 snap">
+        <div 
+        className="Asection_1 snap"
+        exit={{opacity: 0}}
+        animate={{opacity: 1}}
+        initial={{opacity: 0}}
+        >
             <h1 className="aboutMe">About.</h1>
             {/* <svg className="blobs" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#F0E378" d="M61.6,-18.9C67.7,-1.2,52.2,24.6,31.2,38.9C10.2,53.2,-16.2,55.9,-31.2,44.7C-46.2,33.4,-49.7,8,-42.6,-11C-35.5,-30,-17.8,-42.7,5,-44.3C27.7,-46,55.5,-36.5,61.6,-18.9Z" transform="translate(100 100)" />
             </svg> */}
             <div className="Asection1-grid">
-            <div>
+            <div data-aos="fade-up">
             <img src={ OutsidePic } className="OutsidePic" alt="Sebastian outside in nature"/>
             </div>
-            <div className="sect1-p">
+            <div className="sect1-p" data-aos="fade-down">
                 <div id="about-me-bio">
                     <h1 id="bio-header">   My name is Sebastian Gayle and I am a software engineer and designer! </h1>
                     <p id="bio-paragraph">

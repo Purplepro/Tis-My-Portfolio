@@ -6,6 +6,7 @@ import Navbar from './Navbar/Navbar';
 import DownloadLink from 'react-download-link';
 import MyPDF from './PDF/MyResumeFile.pdf';
 import '../components/Resume.css'
+import { motion } from 'framer-motion';
 
 
 
@@ -15,7 +16,12 @@ const Resume = () => {
     
 
         return (
-            <div className="resume-comp">
+            <motion.div 
+            className="resume-comp"
+            exit={{opacity: 0}}
+            animate={{opacity: 1, y: 0}}
+            initial={{opacity: 0}}
+            >
                 <Navbar/>
                 <div className="resume-picture-container">
                     <h1 id="resume-page-title">My Resume <span><p id="resume-download-intructions">Click to download</p></span></h1>
@@ -26,7 +32,7 @@ const Resume = () => {
                     </div>
                 </a>
                 </div>
-            </div>
+            </motion.div>
         )
 
 

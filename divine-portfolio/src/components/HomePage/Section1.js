@@ -1,20 +1,23 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Character from '../../images/ui-character.png';
-import Aos from 'aos';
-
+import { motion } from 'framer-motion'
 
 
 const Section1 = () => {
-    useEffect(() => {
-        Aos.init({duration: 2000});
-    }, [])
+   
 
 
 
     
         return (
-            <div className="Section_1 snap" id="sect_1">
+            <motion.div 
+            className="Section_1 snap" 
+            id="sect_1"
+            exit={{opacity: 0}}
+            animate={{opacity: 1}}
+            initial={{opacity: 0}}
+            >
                 <Navbar/>
                 <div className="ladingpage-div-grid">
                     <div data-aos="fade-right" className="Entrence-quote section-1-child">
@@ -26,7 +29,7 @@ const Section1 = () => {
                 
                     </div>
                 </div>
-            </div>
+            </motion.div>
         )
     
 }
