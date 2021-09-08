@@ -1,6 +1,6 @@
 import React from "react";
-import {ImGithub, ImLinkedin, } from 'react-icons/im'
-
+import {ImGithub, ImLinkedin, ImTwitter  } from 'react-icons/im';
+import {FaSlack} from 'react-icons/fa';
 
 
 const Footer = () => {
@@ -10,10 +10,10 @@ const Footer = () => {
     return (
         <div className="footer">
             <ul>
-                <li><ImGithub color="white"/></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><ImGithub color="white" className="social-icons" /></li>
+                <li><ImLinkedin color="white" className="social-icons" /></li>
+                <li><FaSlack color="white" className="social-icons"/></li>
+                <li><ImTwitter color="white" className="social-icons"/></li>
             </ul>
         </div>
     )

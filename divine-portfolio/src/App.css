@@ -82,8 +82,23 @@
 
 .footer {
   height: 70px;
-  width: 100%;
+  width: 20%;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 3px;
+}
+.social-icons {
+  height: 40px;
+  width: 40px;
+}
+
+.footer ul li {
+  display: inline;
+  margin: auto;
+  padding: 10px;
+
 }
 
 /* mobile navbar */
@@ -246,13 +261,19 @@ span {
 
 /* project section */
 .Section_2 {
-height: 150vh;
+height: 100vh; 
+margin:auto;
 background-color: black;
 display: grid;
-grid-template-columns: auto auto auto !important;
-grid-auto-rows: 25%;
+grid-template-columns: auto auto !important;
+grid-auto-rows: 50%;
 grid-gap: 10px !important; 
-padding: 10px;
+padding: 15px;
+padding-bottom: 25px;
+
+/*when I want to add more project adjust the height and or give the grid template another column
+also lower the grid-auto-rows to have more room fof my projects
+*/
 }
 
 
@@ -304,7 +325,7 @@ padding: 10px;
 
 .project-link {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 30px !important;
 }
 
@@ -363,7 +384,7 @@ padding: 10px;
 
 .overlay {
   position: absolute;
-  background-color: rgb(247, 242, 178);
+  background-color: rgb(0,0,0,.8);
   width: 100%;
   bottom: 0;
   height: 0;
@@ -375,9 +396,23 @@ padding: 10px;
   display: grid;
 }
 
+.text-area {
+  border: 3px solid rgb(247, 242, 178);
+}
+
+.text-area h1 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "poppins", sans-serif;
+}
+
 .project-description {
   font-size: 20px;
-  padding: 5px;
+  padding: 0px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "poppins", sans-serif;
 }
 /* .project-b-div {
   padding: ;

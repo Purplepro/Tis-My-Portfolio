@@ -90,6 +90,8 @@ class Section3 extends Component {
                     <li>Adobe Illustrator</li>
                     <li>Adobe Photoshop</li>
                 </ul>
+
+                <Footer/>
             </motion.div>
         )
     }
