@@ -11,9 +11,12 @@ const NavLinks = (props) => {
                 <img src={sevslogo} className="SevsLogo"  alt="sebastians logo of his initials"/>
             </li>
 
+
+
         <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-           <NavLink className="nav-link" to='/'>Home</NavLink> 
+           <NavLink className="nav-link" id="Home" to='/'>Home</NavLink> 
             </li>
+
 
         <li onClick={() => props.isMobile && props.closeMobileMenu()}>
         <NavLink className="nav-link" to='/resumepage'>Resume</NavLink>
