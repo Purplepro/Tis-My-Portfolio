@@ -82,7 +82,7 @@
   width: 150px !important;
   margin: 0;
   padding: 0;
-  margin-right: 200px;
+  margin-right: 600px;
   position: relative;
   bottom: 60px;
   right: 0px;
@@ -93,11 +93,25 @@
   height: 70px;
   width: 20%;
   background-color: black;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  margin: auto;
+  margin: auto; */
   border-radius: 3px;
 }
+
+.footer > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 70px;
+  width: 20%;
+}
+
+
+
+
+
 .social-icons {
   height: 40px;
   width: 40px;
