@@ -5,6 +5,8 @@
  * {
    font-family: 'Open Sans', Helvetica;
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
  }
 
 .App {
@@ -90,23 +92,30 @@
 
 
 .footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
   height: 70px;
-  width: 20%;
+  width: 100%;
   background-color: black;
-  /* display: flex;
-  justify-content: center;
-  margin: auto; */
-  border-radius: 3px;
+  display: flex;
+  margin: 0;
 }
 
-.footer > a {
+.footer-child {
+  margin: auto;
+  position: relative;
+}
+
+/* .footer > a {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   height: 70px;
   width: 20%;
-}
+} */
 
 
 
@@ -124,70 +133,6 @@
 
 }
 
-/* mobile navbar */
-.nav .mobile-navbar {
-  display: none;
-}
-
-@media screen and (max-width: 990px) {
-
-  .nav .Navigation {
-    display: none;
-  }
-
-  .nav .mobile-navbar{
-    display: flex;
-    align-items: right;
-    color: black;
-  }
-
-  .nav .mobile-navbar .Hamburger {
-    position: absolute;
-    right: 5%;
-    cursor: pointer;
-    color: black;
-  }
-
-
-  .nav nav ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 0px;
-    width: 100%;
-    background-color: #181818;
-    border-top: 2px solid white;
-    z-index: 1000;
-
-  }
-
-
-  .nav {
-    opacity: 1;
-  }
-  
-  .nav a {
-    color: white;
-  }
-
-  .nav a:hover {
-    border-bottom: none;
-    color: rgb(124, 74, 47);
-  }
-
-  .snap {
-    
-  }
-
-
-  .SevsLogo {
-    display: none;
-  }
-  
-}
-/* end of mobile navebar */
-
 .snap {
   scroll-snap-align:start;
   -webkit-transition: background-color 1000ms linear;
@@ -198,12 +143,13 @@
 }
 /* section 1  */
 .Section_1 {
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   background-image: url('./images//ui-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .ladingpage-div-grid {
@@ -213,7 +159,7 @@
 }
 
 .section1-header {
-  font-size: 60px;
+  font-size: calc(30px + 2vw);
   font-family: 'Poppins', serif;
   font-weight: bold;
 }
@@ -236,51 +182,18 @@ span {
   background-image: url('./images/ui-character.png');
   background-position: center;
   margin-top: 100px;
+
 }
 
 
-@media screen and (max-width: 990px) {
+
+@media screen and (max-width: 960px) {
   .Section_1 {
-    height: 200vh;
-    width: 100%;
-    background-image: url('./images//ui-bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
   }
-
-  .ladingpage-div-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-  .character-image {
-    height: 200px;
-    width: 550px;
-    
-  }
-
-  .Entrence-quote {
-    text-align: center;
-    margin-right: 100px;
-    font-size: 30px;
-  }
-
-  .svg-image {
-    display: flex;
-    background-image: url('./images/ui-character.png');
-    background-position: center;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-  }
-
 }
+
+
 
 /* end of section 1 */
 
@@ -295,6 +208,7 @@ span {
 /* project section */
 .Section_2 {
 height: 100vh; 
+width: 100vw;
 margin:auto;
 background-color: black;
 display: grid;
@@ -303,6 +217,7 @@ grid-auto-rows: 50%;
 grid-gap: 10px !important; 
 padding: 15px;
 padding-bottom: 25px;
+overflow: hidden;
 
 /*when I want to add more project adjust the height and or give the grid template another column
 also lower the grid-auto-rows to have more room fof my projects
@@ -310,49 +225,7 @@ also lower the grid-auto-rows to have more room fof my projects
 }
 
 
-@media screen and (max-width: 750px) {
-  .Section_2 {
-  height: 160vh;
-  background-color: rgb(19, 18, 18);
-  display: flex;
-  flex-wrap: wrap;
-  }
 
-
-.birflow-picture {
-  background-image: url('./images/birdflowpic.png');
-  height: 250px;
-  width: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-.bluedale-picture {
-  background-image: url('./images/bluedalepic.png');
-  height: 250px;
-  width: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.elomobile-picture {
-  background-image: url('./images/elopic.png');
-  height: 250px;
-  width: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.orbitalgrounds-picture {
-  background-image: url('./images/orbitalgroundspic.png');
-  height: 250px;
-  width: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-}
 
 .project-link {
   text-decoration: none;
@@ -487,6 +360,7 @@ also lower the grid-auto-rows to have more room fof my projects
 height: 150vh;
 background-color: rgb(247, 242, 178);
 margin: 0;
+overflow: hidden;
 }
 
 .language-container {
@@ -550,38 +424,7 @@ margin: 0;
   margin: 100px auto;
 }
 
-@media screen and (max-width: 990px) {
 
-  .Section_3 {
-    height: 220vh;
-    background-color: rgb(247, 242, 178);
-    margin: 0;
-    }
-
-  .language-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-left: 150px;
-    grid-gap: 5px;
-    margin: 0 auto;
-  }
-
-  .circle {
-  background-color: transparent;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  margin: 5px;
-  margin-left: 58px;
-  padding: 10px ;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .5s ease-out;
-}
-
-}
 
 
 /* .logo {
@@ -604,7 +447,7 @@ box-shadow: 0px 5px;
 /* about page */
 
 .Asection_1 {
-  height: 110vh;
+  height: auto;
   width: 100%;
   background-color: rgb(247, 242, 178);
   
@@ -622,18 +465,20 @@ box-shadow: 0px 5px;
 
 .Asection1-grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 100px;
   padding-left: 200px;
   grid-gap: 30px;
   justify-content: center;
   align-content: center;
+  position: relative;
 }
 
 
 .OutsidePic {
-    height: 550px;
-    width: 400px;
+    height: 75vh;
+    width: 30vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* border-radius: 50; */
 }
@@ -700,44 +545,9 @@ box-shadow: 0px 5px;
 
 /* about page media query */
 
-@media screen and (max-width: 990px) {
 
-  .Asection_1 {
-    height: 140vh;
-    width: 100%;
-    background-color: rgb(247, 242, 178);
-  }
   
 
-
-  .Asection1-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  #about-me-bio {
-    overflow-y: none;
-    margin: auto;
-  }
-
-
-
-  #bio-paragraph {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
- }
-
- .OutsidePic {
-  height: 450px;
-  width: 320px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* border-radius: 50; */
-}
-  
-}
 
 /* iphone X */
 @media only screen 
@@ -794,6 +604,98 @@ box-shadow: 0px 5px;
   }
 
 
+
+  @media screen and (max-width: 990px) {
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .Section_3 {
+      height: auto;
+      background-color: rgb(247, 242, 178);
+      margin: 0;
+      }
+  
+    .language-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin-left: 150px;
+      grid-gap: 5px;
+      margin: 0 auto;
+    }
+  
+    .circle {
+    background-color: transparent;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 58px;
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .5s ease-out;
+    position: relative;
+  }
+  
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .Section_2 {
+    height: auto;
+    background-color: rgb(19, 18, 18);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: none;
+    }
+  
+  
+  .birflow-picture {
+    background-image: url('./images/birdflowpic.png');
+    height: 250px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  .bluedale-picture {
+    background-image: url('./images/bluedalepic.png');
+    height: 250px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .elomobile-picture {
+    background-image: url('./images/elopic.png');
+    height: 250px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .orbitalgrounds-picture {
+    background-image: url('./images/orbitalgroundspic.png');
+    height: 250px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    position: relative;
+  }
+  
+  }
+
 /* ipad pro 12.5 */
   @media only screen 
   and (min-device-width: 1024px) 
@@ -813,6 +715,72 @@ box-shadow: 0px 5px;
 
 
 }
+
+
+
+/* mobile navbar */
+.nav .mobile-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+
+  .nav .Navigation {
+    display: none;
+  }
+
+  .nav .mobile-navbar{
+    display: flex;
+    align-items: right;
+    color: black;
+  }
+
+  .nav .mobile-navbar .Hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    color: black;
+  }
+
+
+  .nav nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 100%;
+    background-color: #181818;
+    border-top: 2px solid white;
+    z-index: 1000;
+
+  }
+
+
+  .nav {
+    opacity: 1;
+  }
+  
+  .nav a {
+    color: white;
+  }
+
+  .nav a:hover {
+    border-bottom: none;
+    color: rgb(124, 74, 47);
+  }
+
+  .snap {
+    scroll-snap-align: none;
+  }
+
+
+  .SevsLogo {
+    display: none;
+  }
+  
+}
+/* end of mobile navebar */
 
 
 
