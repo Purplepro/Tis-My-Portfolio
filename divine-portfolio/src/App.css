@@ -461,31 +461,23 @@ box-shadow: 0px 5px;
   
 }
 
-.Asection_2 {
-  height: 100vh;
-  background-color: black;
-  padding-top: 100px;
-}
 
-.Asect-2-paragraph {
-  margin: 0;
-}
 
 .Asection1-grid {
-  display: grid;
+  display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: inherit;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding: 100px;
-  padding-left: 200px;
   grid-gap: 30px;
   justify-content: center;
-  align-content: center;
   position: relative;
+  padding: 60px;
 }
 
 
 .OutsidePic {
-    height: 75vh;
+    height: auto;
     width: 30vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* border-radius: 50; */
@@ -518,8 +510,21 @@ box-shadow: 0px 5px;
   overflow-y: scroll;
   height: 550px;
   width: 500px;
+  
+}
+ 
+.sect1-p::-webkit-scrollbar  {
+  width: 3px;
 }
 
+.sect1-p::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.sect1-p::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid transparent;
+}
 
 
 #about-me-bio {
@@ -528,6 +533,7 @@ box-shadow: 0px 5px;
   margin: auto;
   scrollbar-width: 3px;
 }
+
 
 #about-me-bio p {
   color: rgb(153, 91, 25);
