@@ -637,6 +637,7 @@ box-shadow: 0px 5px;
     .circle {
       height: auto;
       width: auto;
+      margin: 15px;
     }
    
   }
