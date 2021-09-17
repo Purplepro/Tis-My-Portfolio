@@ -7,6 +7,7 @@ import DownloadLink from 'react-download-link';
 import MyPDF from './PDF/MyResumeFile.pdf';
 import '../components/Resume.css'
 import { motion } from 'framer-motion';
+import Footer from './Footer/Footer';
 
 
 
@@ -32,6 +33,8 @@ const Resume = () => {
                     </div>
                 </a>
                 </div>
+
+                <Footer/>
             </motion.div>
         )
 

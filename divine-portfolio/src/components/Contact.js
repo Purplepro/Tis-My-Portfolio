@@ -4,7 +4,8 @@ import '../components/ContactStyle.css'
 import Artvid from '../videos/artvid.mp4';
 import Navbar from './Navbar/Navbar';
 import emailjs from 'emailjs-com';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import Footer from './Footer/Footer';
 
 
 
@@ -73,6 +74,8 @@ const Contact = () => {
                     </video>
                 </div>
             </div>
+
+            <Footer/>
         </motion.div>
     )
 }

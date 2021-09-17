@@ -3,7 +3,8 @@
 .Contact {
     background-color: rgb(247, 242, 178);
     background-size: cover;
-    height: 120vh;
+    height: 140vh;
+    position: relative;
 }
 
 #contact-link {
