@@ -146,6 +146,8 @@
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
 }
+
+
 /* section 1  */
 .Section_1 {
   height: 100vh;
@@ -191,6 +193,7 @@ span {
 }
 
 
+
 .image-wrapper {
   display: flex; 
   justify-content: center;
@@ -211,7 +214,6 @@ span {
   margin: 0 auto;
   padding: 0;
 }
-
 
 
 
