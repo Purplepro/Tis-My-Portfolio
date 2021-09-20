@@ -48,7 +48,7 @@
     outline: none;
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid rgb(124, 74, 47);
+    border-bottom: 2px solid rgb(124, 74, 47); 
     display: block;
     padding: 10px;
     font-size: 20px;
@@ -97,9 +97,9 @@
     object-position: center;
 }
 
-.contact-form {
+/* .contact-form {
     position: relative;
-}
+} */
 
 .contact-button {
     border: none;
@@ -143,3 +143,45 @@
     }
 
 }
+
+
+@media only screen
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .video {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+  }
+
+@media only screen
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .video {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+  }
+
+@media only screen
+  and (min-device-width: 360px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .video {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+  }
+
+  
